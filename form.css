@@ -16,6 +16,7 @@ body{
     opacity: 0.8;
     position: relative;
     border: 3px solid rgb(51, 50, 50);
+    outline: 0;
     
 }
 
@@ -30,6 +31,7 @@ h3{
     top: 100px;
     left: 40px;  
     
+    
 }
 form input{
     width: 100%;
@@ -40,7 +42,6 @@ form input{
     background-color: rgb(214, 210, 210);
     color: black;
     font-weight: 400;
-    border:  1px solid black;
     outline: none; 
     
 }
@@ -60,10 +61,11 @@ form button{
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background-color: rgb(121, 117, 117);
+    background: linear-gradient(rgb(184, 180, 180), rgb(114, 114, 111), rgb(65, 66, 65));
     border-radius: 5px;
     margin-top: 20px;
     color: aliceblue;
+    border: 0;
     
 }
 
@@ -74,4 +76,54 @@ form button:hover{
     transition: 1s;
 }
 
+#form2{
+    left: 450px;
+
+}
+
+#form3{
+    left:450px
+}
+#step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: rgb(68, 67, 67);
+    position: relative;
+    color: rgb(216, 219, 221);
+
+    
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(rgb(184, 180, 180), rgb(114, 114, 111), rgb(65, 66, 65));
+    
+}
+
+#progress::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid rgb(48, 47, 47);
+
+}
+    
 
